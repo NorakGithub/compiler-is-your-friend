@@ -16,7 +16,7 @@ Questions:
 1) What did you learn from this exercise?
 */
 class SafeDivisor {
-    divisor: number = 1;
+    private divisor: number = 1;
 
     setDivisor(value: number) {
         if (value == 0) {
@@ -36,3 +36,7 @@ function exploit(): number {
     sd.divisor = 0;
     return sd.divide(42); 
 }
+
+/*
+1) Class property accessaibilty, this related to object designing.
+*/
